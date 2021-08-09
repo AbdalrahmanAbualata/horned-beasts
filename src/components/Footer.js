@@ -3,7 +3,7 @@ class Footer  extends React.Component {
     render() {
         return (
             <>
-             <h3> &copy;  Abdalrahman abuata</h3>
+             <footer id={"Footer"}> &copy;  Abdalrahman abuata</footer>
             </>
         )
     }
