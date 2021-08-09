@@ -33,9 +33,9 @@ class Main  extends React.Component {
         <HornedBeast  imageUrl='https://ichef.bbci.co.uk/news/1024/branded_news/0370/production/_104508800_vandermerweimage.jpg'  title='Siberian unicorn' imageAlt='Siberian unicorn Image' imageTitle='Siberian unicorn' description="As green apple is a fibre rich fruit, it is beneficial for weight loss. Green apples have lower sugar levels and more minerals and antioxidants that help to shed a few pounds. ... Tip: Green apples can increase your metabolism and help you to reduce weight. If you are on a diet then green apples can be a favourite snack." />
         
         {
-           arr.map((x)=>{
+           arr.map((x,indx)=>{
             return(
-              <HornedBeast title = {x.title} imageUrl = {x.image_url} description = {x.description} keyword = {x.keyword} horns = {x.horns +"    horns "}/>
+              <HornedBeast key={indx} title = {x.title} imageUrl = {x.image_url} description = {x.description} keyword = {x.keyword} horns = {x.horns +"    horns "}/>
             );
           })
         }
