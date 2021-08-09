@@ -36,6 +36,22 @@
     transform: rotate(360deg);
   }
 }
-header{
+h1{
+  
+  background-color: rgba(42, 76, 138, 0.705);
+  padding: 30px;
   text-align: center;
+  border: solid black 1px;
+  box-shadow: cornflowerblue 0px 3px 5px;
+}
+
+#Footer{
+  display: block;
+  background-color: rgba(42, 76, 138, 0.733);
+  padding: 30px;
+  text-align: center;
+  border: solid black 1px;
+  box-shadow: rgb(42, 75, 138) 0px 3px 8px;
+  font-size: 25px;
+  font-weight: bold;
 }
