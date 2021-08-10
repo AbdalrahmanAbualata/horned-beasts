@@ -33,7 +33,7 @@ class HornedBeast extends React.Component {
         </p> */}
         <Card   style={{ width: 'auto' }}>
           <Card.Title onClick={this.renderModal}><h2> {this.props.title} </h2></Card.Title>
-          <Card.Title>keyword: {this.props.keyword}</Card.Title>
+          {/* <Card.Title>keyword: {this.props.keyword}</Card.Title> */}
           <Card.Title><h3> horns: {this.props.horns} </h3></Card.Title>
           <Card.Img  onClick={this.increaseNumOfFavorites} variant="top" src={this.props.imageUrl} alt={this.props.imageAlt} title={this.props.imageTitle} />
           <Card.Body>
