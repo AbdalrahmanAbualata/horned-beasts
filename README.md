@@ -1,34 +1,14 @@
 
-class 02
+class 03
 
 Number and name of feature: Display a Modal
 
-Estimate of time needed to complete: 15 min
+Estimate of time needed to complete: 4 hours
 
-Start time: 15:25
+Start time: 14:00
 
-Finish time: 15:40
+Finish time: 16:00
 
-Actual time needed to complete: 15 min 
+Actual time needed to complete: 4 min 
 
 *********************************************************
-
-Number and name of feature: Feature #2: Allow users to vote for their favorite beast
-
-Estimate of time needed to complete: 30 min
-
-Start time: 15:40
-
-Finish time: 16:20
-
-Actual time needed to complete: 40 min 
-
-***********************************************************
-Number and name of feature: Feature 3: Bootstrap
-
-Estimate of time needed to complete: 60 min
-
-Start time: 16:30
-
-Finish time: 17:30
-Actual time needed to complete: 60 min 
