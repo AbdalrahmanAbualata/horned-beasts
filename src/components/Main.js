@@ -1,19 +1,40 @@
 
 import React from 'react';
 import HornedBeast from "./HornedBeasts"
-// import BeastsJson from "./BeastsJson";
 import './Main.css';
+import FilteredBeasts from "./FilteredBeasts"
+
 class Main  extends React.Component {
   constructor (props){
     super(props);
       this.state={
-        data : this.props.BeastsJsonM
-
+        data : this.props.BeastsJsonM ,
+        
       };
     }
+    selectHorns = async (e) => {
+      e.preventDefault();
+      let filterdData = [];
+      let num =Number(e.target.value);
+      if (!(isNaN(num))) {
+        console.log(num);
+        filterdData = this.props.BeastsJsonM.filter((obj) => {
+          if (obj.horns === num) {
+            return 1;
+          }
+        });
+      } else {
+        console.log(num);
+        filterdData = this.props.BeastsJsonM ;
+      }
+      await this.setState({
+        data: filterdData,
+      });
+    };
     render() {
         return (
             <>
+            <FilteredBeasts selectHorns={this.selectHorns}/>
         {
            this.state.data.map((x,indx)=>{
             return(
