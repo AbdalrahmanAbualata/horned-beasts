@@ -23,6 +23,7 @@ class App extends React.Component{
       this.setState({
         clickedAnimal: clickedBeast,
         show:true ,
+       
       });
      
     };
@@ -40,7 +41,7 @@ class App extends React.Component{
       <>
      
         <Header  />
-        <Main renderModal={this.renderModal}  />
+        <Main BeastsJsonM={BeastsJson} renderModal={this.renderModal}  />
         <SelectedBeast clickedAnimal={this.state.clickedAnimal} show={this.state.show} handleClose={this.handleClose}/>
         <Footer />
       </>
