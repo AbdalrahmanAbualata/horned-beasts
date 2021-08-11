@@ -39,11 +39,9 @@ class HornedBeast extends React.Component {
           <Card.Body>
             <Card.Text>
               <Button  onClick={this.renderModal} id="button" variant="primary"> ℹ️ Show Information </Button>
-
+              </Card.Text>
               <p className="favorites"> 💖favorites:{this.state.numberOfFavorites} </p>
               <p id='dis'> {this.props.description} </p>
-            </Card.Text>
-            
           </Card.Body>
         </Card>
 
