@@ -24,4 +24,4 @@ export class FilteredBeasts extends React.Component {
     }
 }
 
-export default FilteredBeasts
+export default FilteredBeasts ;
